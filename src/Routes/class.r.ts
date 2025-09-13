@@ -7,7 +7,7 @@ const classrouter=express.Router();
 classrouter.post("/create",issignedin,createclass)
 classrouter.get("/all",issignedin,getallclasses)
 classrouter.get("/:classname",issignedin,getclass)
-classrouter.put("/:classname",issignedin,updateclass)
+classrouter.put("/update/:classname",issignedin,updateclass)
 classrouter.get("/delete/:classname",issignedin,deleteclass)
 
 

@@ -6,7 +6,7 @@ import { issignedin } from "../Middlewares/teacher.middleware.js";
 const studentrouter=express.Router()
 
 
-studentrouter.post("/create",issignedin,addstudent);
+studentrouter.post("/add",issignedin,addstudent);
 studentrouter.get("/:reg_no",issignedin,studetails);
 studentrouter.get("/:classname/students",issignedin,getallstudents);
 studentrouter.put("/update/:reg_no",issignedin,updatestudent);
