@@ -136,7 +136,7 @@ Returns full attendance records for a student.
 ```bash
 cd cloned foleder
 npm install
-npm start
+npm run dev
 ```
 
 ### Also update Mongodb url in tsconfig.ts file 
